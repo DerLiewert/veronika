@@ -521,9 +521,9 @@ body._is-preloader .wrapper {
     background-color: #f5a802
   }
   ._colorfull .piece__image:not(._full) {
-    transition: -webkit-filter .3s ease 0s;
-    transition: filter .3s ease 0s;
-    transition: filter .3s ease 0s,-webkit-filter .3s ease 0s
+    transition: clip-path 1s ease 0s,-webkit-filter .3s ease 0s;
+    transition: clip-path 1s ease 0s,filter .3s ease 0s;
+    transition: clip-path 1s ease 0s,filter .3s ease 0s,-webkit-filter .3s ease 0s
   }
   ._colorfull .piece__image:not(._full):hover {
     -webkit-filter: brightness(1.15);
